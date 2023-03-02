@@ -7,9 +7,4 @@ public class Terminal
   public int TerminalId { get; set; }
   public DateTime Date { get; set; }
   public decimal Amount { get; set; }
-
-  internal static void Remove(Terminal terminal)
-  {
-    throw new NotImplementedException();
-  }
 }

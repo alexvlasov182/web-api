@@ -30,10 +30,10 @@ public static class TerminalService
     var terminal = Get(id);
     if (terminal is null)
       return;
-    Terminal.Remove(terminal);
+    Terminals.Remove(terminal);
   }
 
-  // This will be Update action
+  // Update action
   public static void Update(Terminal terminal)
   {
     var index = Terminals.FindIndex(t => t.Id == terminal.Id);
