@@ -36,5 +36,10 @@ public static class TerminalService
   // This will be Update action
   public static void Update(Terminal terminal)
   {
+    var index = Terminals.FindIndex(t => t.Id == terminal.Id);
+    if (index == -1)
+      return;
+
+    Terminals[index] = terminal;
   }
 }
